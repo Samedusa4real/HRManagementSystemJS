@@ -1,0 +1,37 @@
+.employees-section{
+    margin-top: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+td{
+    width: 25%;
+}
+  
+th {
+    background-color: purple;
+    color: white;
+    border: 3px solid black;
+    text-align: center;
+}
+  
+tr:nth-child(even) {
+    background-color: rgba(128, 0, 128, 0.586);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(128, 0, 128, 0.318);
+}
+
+tbody{
+    border: 3px solid black;
+}

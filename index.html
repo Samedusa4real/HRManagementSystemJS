@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/460a2c75b1.js" crossorigin="anonymous"></script>
+    <script type="module" src="./main.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>HRManagement</title>
+</head>
+<body>
+    <h1 style="color: red;">HR Management System</h1>
+
+    <div id="first-page" class="non-visibility">
+        <div class="add-new-employee">
+            <h3 style="color: purple;">ADD-ON SERVICE:</h3>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+    
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname">
+    
+            <label for="salary">Salary(w/Manat):</label>
+            <input type="number" id="salary">
+            
+            <label for="position">Position:</label>
+            <select name="position-options" id="position">
+                <option value="Manager">Manager</option>
+                <option value="Assistant">Assistant</option>
+                <option value="Designer">Designer</option>
+                <option value="Qazi">Qazi</option>
+            </select>
+    
+            <button style="background-color: purple;">Add Employee</button>
+        </div>
+
+        <span style="cursor: pointer; color: red; font-size: 20px; text-decoration: underline;">EMPLOYEE LIST</span>
+    </div>
+    
+    <div id="second-page" class="">
+        <div class="transactions">
+            <div class="search-section">
+                <label for="searchTerm"> <img style="width: 30px; margin-top: 10px; cursor: pointer;" src="./assets/images/search.png" alt=""></label>
+                <input type="text" id="searchTerm" placeholder="Search for name or surname">
+            </div>
+            
+            <div class="filter-and-sort-transactions">
+                <div class="filter-by-salary-section">
+                    <label>Filter by salary:</label>
+                    <input type="number" id="salaryFilter">
+                </div>
+            
+                <div class="filter-by-position-section">
+                    <label>Filter by position:</label>
+                    <select id="positionFilter">
+                        <option value="">All</option>
+                        <option value="manager">Manager</option>
+                        <option value="assistant">Assistant</option>
+                        <option value="qazi">Qazi</option>
+                        <option value="designer">Designer</option>
+                    </select>
+                </div>
+
+                <div class="sort-section">
+                    <label for="sortField">Sort by:</label>
+                    <select id="sortField">
+                        <option value="name">Name</option>
+                        <option value="surname">Surname</option>
+                        <option value="salary">Salary</option>
+                        <option value="position">Position</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="add-new-item" style="margin-top: 45px; margin-left: 30px; cursor: pointer;">
+                <img id="add" src="./assets/images/add.png" style="width: 50px;"> 
+            </div>
+        </div>
+    
+        <div class="employees-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Salary</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>  
+    </div>  
+</body>
+</html>

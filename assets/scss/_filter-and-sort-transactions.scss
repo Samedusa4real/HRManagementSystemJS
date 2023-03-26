@@ -1,0 +1,44 @@
+.filter-and-sort-transactions{
+    position: relative;
+    left: 30px;
+    top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+.filter-and-sort-transactions .sort-section select{
+    border: 2px solid green;
+    color: green;
+}
+
+.filter-and-sort-transactions .sort-section label{
+    color: green;
+    font-size: 20px;
+}
+
+.filter-and-sort-transactions .filter-by-position-section{
+    margin-top: 4px;
+}
+
+.filter-and-sort-transactions .filter-by-position-section select{
+    border: 2px solid red;
+    color: red;
+}
+
+.filter-and-sort-transactions .filter-by-position-section label{
+    color: red;
+    font-size: 15px;
+}
+
+.filter-and-sort-transactions .filter-by-salary-section input{
+    border: 2px solid blue;
+    color: blue;
+    outline: purple;
+}
+
+.filter-and-sort-transactions .filter-by-salary-section label{
+    color: blue;
+    font-size: 20px;
+}

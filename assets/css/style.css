@@ -1,0 +1,146 @@
+#first-page {
+  margin-bottom: 50px;
+}
+
+.add-new-employee input, .add-new-employee label {
+  cursor: pointer;
+}
+
+.add-new-employee button {
+  position: relative;
+  left: 91%;
+}
+
+input[type=text], input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.visibility {
+  display: block;
+}
+
+.non-visibility {
+  display: none;
+}
+
+.transactions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.transactions .search-section {
+  position: relative;
+  top: 50px;
+  right: 50px;
+  display: flex;
+}
+
+.transactions .search-section input {
+  height: 40px;
+  width: 220px;
+}
+
+.filter-and-sort-transactions {
+  position: relative;
+  left: 30px;
+  top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.filter-and-sort-transactions .sort-section select {
+  border: 2px solid green;
+  color: green;
+}
+
+.filter-and-sort-transactions .sort-section label {
+  color: green;
+  font-size: 20px;
+}
+
+.filter-and-sort-transactions .filter-by-position-section {
+  margin-top: 4px;
+}
+
+.filter-and-sort-transactions .filter-by-position-section select {
+  border: 2px solid red;
+  color: red;
+}
+
+.filter-and-sort-transactions .filter-by-position-section label {
+  color: red;
+  font-size: 15px;
+}
+
+.filter-and-sort-transactions .filter-by-salary-section input {
+  border: 2px solid blue;
+  color: blue;
+  outline: purple;
+}
+
+.filter-and-sort-transactions .filter-by-salary-section label {
+  color: blue;
+  font-size: 20px;
+}
+
+.employees-section {
+  margin-top: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  width: 25%;
+}
+
+th {
+  background-color: purple;
+  color: white;
+  border: 3px solid black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(128, 0, 128, 0.586);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(128, 0, 128, 0.318);
+}
+
+tbody {
+  border: 3px solid black;
+}/*# sourceMappingURL=style.css.map */
