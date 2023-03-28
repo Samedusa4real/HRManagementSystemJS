@@ -10,14 +10,29 @@ export function refreshResultTable() {
         const row = document.querySelector("tbody tr")
         const removeData = document.querySelector("tbody tr td:last-child")
         const removeIcons = document.querySelectorAll("i")
+
+        const deleteAlertSection = document.querySelector("#delete-employee-alert")
+        const deleteAlertButtons = document.querySelectorAll("#delete-employee-alert button")
+        const secondDisplay = document.querySelector("#second-page")
+        
         removeIcons.forEach((removeIcon) =>{
           removeIcon.addEventListener("click", ()=>{
-            employees.splice(index,1);
-            filterEmployees();
-            removeData.appendChild(removeIcon)
+            secondDisplay.classList.add("make-blur")
+            deleteAlertSection.style.display = "flex"
+            deleteAlertButtons.forEach(deleteAlertButton => {
+              deleteAlertButton.addEventListener("click", function(){
+                if(deleteAlertButton.innerText === "YES"){
+                  employees.splice(index,1);
+                  filterEmployees();
+                  removeData.appendChild(removeIcon)
+                }
+                deleteAlertSection.style.display = "none"
+                secondDisplay.classList.remove("make-blur")
+              })
+            })
           })
           row.appendChild(removeData)
         })
-    });
-    editingEmployeeValues()
+      });
+      editingEmployeeValues()
 }
